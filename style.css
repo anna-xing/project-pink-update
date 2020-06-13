@@ -1,0 +1,128 @@
+body {
+    text-align: center;
+}
+
+.material-icons {
+    height: 90%;
+}
+
+/* NAV */
+
+nav h3 {
+    font-size: 14pt;
+    margin: 0.5em auto;
+}
+
+nav {
+    background-color: white;
+}
+
+nav a {
+    margin-left: 0.5em;
+    color: rgb(32, 32, 32);
+}
+
+#autocomplete {
+    margin-right: 0;
+    width: 24em;
+}
+
+#search {
+    margin-left: 0;
+    height: 2.35em;
+}
+
+/* MAP */
+
+#map {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ADD */
+
+.close-btn {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+#add-card {
+    z-index: 2;
+    margin: 12em auto;
+    width: 30em;
+    padding: 4em;
+    border-radius: 5px;
+}
+
+#add-card h3 {
+    font-size: 16pt;
+    margin: 1em 0;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-block {
+    margin-top: 1em;
+}
+
+#submit {
+    margin-top: 1.5em;
+}
+
+/* LEGEND */
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 12pt;
+    margin-bottom: 1em;
+}
+
+#legend {
+    width: fit-content;
+    text-align: left;
+    padding: 2em;
+    position: fixed;
+    top: 4em;
+    left: 0;
+    z-index: 1;
+}
+
+#legend ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#legend ul span {
+    border-radius: 5px;
+    float: left;
+    height: 20px;
+    width: 2em;
+    margin-right: 0.5em;
+}
+
+#legend ul span.products {
+    background: rgb(255, 172, 117);
+}
+
+#legend ul span.restrooms {
+    background: rgb(173, 210, 241);
+}
+
+/* CARDS */
+
+.card {
+    margin: 2em;
+    padding: 1em;
+}

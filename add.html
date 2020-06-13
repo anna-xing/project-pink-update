@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Project Pink</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top justify-content-between">
+        <a class="navbar-brand" href="index.html">
+            <h3>Project Pink</h3>
+        </a>
+        <form class="form-inline">
+            <div class="input-group">
+                <input id="autocomplete" type="text" class="form-control" placeholder="Enter your location">
+                <div class="input-group-append">
+                    <button id="search" class="btn btn-primary my-2 my-sm-0" type="button">
+                        <span class="material-icons">search</span>
+                    </button>
+                </div>
+            </div>
+            <a href="add.html">
+                <button id="add" class="btn btn-primary my-2 my-sm-0" data-toggle="modal" data-target="#my-modal"
+                    type="button">
+                    Add location
+                </button>
+            </a>
+        </form>
+    </nav>
+
+    <div id="add-card" class="card">
+        <a class="close-btn" href="index.html"><span class="material-icons">close</span></a>
+        <h3>Add a node for</h3>
+        <div class="options">
+            <button id="restrooms" type="button" class="node-btn btn btn-lg btn-outline-primary">restrooms</button>
+            <button id="product" type="button" class="node-btn btn btn-lg btn-outline-primary">menstrual products</button>
+        </div>
+        <div class="address-block">
+            <h3>at this address:</h3>
+            <input id="add-location" type="text" class="form-control" placeholder="Enter a location" />
+            <a href="index.html">
+                <button id="submit" type="submit" class="btn btn-primary btn-lg" onclick="addLocation()">Submit</button>
+            </a>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbBQoqI37ZKuVlP5Wm1bRQzjyJ9yW91Gs&callback=initMap&libraries=places">
+        </script>
+</body>
+
+</html>
